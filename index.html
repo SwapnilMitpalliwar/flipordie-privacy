@@ -21,7 +21,7 @@
   Edit there too when this changes; the URL is GameConfig.PrivacyPolicyUrl. Not legal advice.
 -->
 <h1>Flip or Die – Privacy Policy</h1>
-<p class="muted">Effective date: 19 October 2026</p>
+<p class="muted">Effective date: 21 October 2026</p>
 
 <p>This policy explains what information the mobile game <strong>Flip or Die</strong> ("the game") collects, why,
 and the choices you have. The game is published by <strong>Swapnil Ashok Mitpalliwar</strong> ("we", "us").</p>
@@ -32,6 +32,8 @@ and the choices you have. The game is published by <strong>Swapnil Ashok Mitpall
   <li>Your progress (scores, coins, skins, settings) is stored only on your device.</li>
   <li>The game is free and shows ads. Our advertising and in-app purchase partners collect device
       information as described below.</li>
+  <li>We use Google Firebase to understand how the game is played (for example how long runs last) and to receive
+      crash reports. This data does not identify you and is not used for advertising.</li>
   <li>You can change your ad privacy choices at any time in <em>Settings → Privacy choices</em> (where available).</li>
 </ul>
 
@@ -65,10 +67,23 @@ settings are saved locally on your device. They are not sent to us. Uninstalling
         storage), and details of in-app purchases (product, price, transaction identifier and the store receipt).</td>
     <td>Running the in-app purchase system, purchase reporting and analytics, and fraud prevention.</td>
   </tr>
+  <tr>
+    <td>Google Firebase Analytics<br>(Google LLC)</td>
+    <td>Gameplay events (for example a run started or ended, its score and length, rewards claimed), an app instance
+        identifier, device and app information, and approximate location derived from the IP address.</td>
+    <td>Understanding how the game is played so we can improve it. Not used for advertising.</td>
+  </tr>
+  <tr>
+    <td>Google Firebase Crashlytics<br>(Google LLC)</td>
+    <td>Crash reports: the state of the app when it crashed, device model and operating system, and an installation
+        identifier.</td>
+    <td>Finding and fixing crashes.</td>
+  </tr>
 </table>
 <p>Each provider handles data under its own privacy policy:
   <a href="https://policies.google.com/privacy">Google</a>,
   <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps that use its services</a>,
+  <a href="https://firebase.google.com/support/privacy">Firebase</a>,
   <a href="https://www.apple.com/legal/privacy/">Apple</a>,
   <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity</a>.</p>
 
@@ -95,8 +110,9 @@ country). We do not knowingly collect personal information from children. If you
 personal information, contact us and we will help remove it.</p>
 
 <h2>Data retention and security</h2>
-<p>Local data stays on your device until you uninstall the game. Third-party providers keep data according to their
-own retention policies (see their privacy policies linked above). Data is transmitted
+<p>Local data stays on your device until you uninstall the game. Firebase Analytics keeps event data for up to 14
+months and Crashlytics keeps crash reports for 90 days. Other providers keep data according to their own retention
+policies (see their privacy policies linked above). Data is transmitted
 over encrypted connections.</p>
 
 <h2>Changes</h2>
